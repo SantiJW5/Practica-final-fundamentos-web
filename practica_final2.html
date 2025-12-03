@@ -20,7 +20,24 @@
             background-size: cover;
             color: white;
             margin: 0;
+            animation: animacion1 ease-in 0.5s;
     }
+    nav{
+        animation: animacion2 ease-in 1s;
+    }
+    @keyframes animacion1 {
+            0%{
+                opacity: 0;
+            }100%{
+                opacity: 1;}
+        }
+        @keyframes animacion2 {
+            0%{
+                transform: translateY(-50px);
+            }100%{
+                transform: translateY(0px);
+            }
+        }
     #btnSubir {
             position: fixed;
             bottom: 20px;

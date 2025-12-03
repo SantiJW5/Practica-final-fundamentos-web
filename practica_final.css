@@ -8,12 +8,16 @@ body {
             background-size: cover;
             color: white;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            animation: animacion1 ease-in 0.5s;
         }
 
         .navbar-custom {
             background: linear-gradient(180deg, #000d81, #140166);
             box-shadow: 0px 0px 5px rgba(0, 162, 255, 0.452);
+            animation: animacion2 1s ease-in;
         }
+
+
 
         .navbar-brand span {
             font-weight: 600;
@@ -25,6 +29,19 @@ body {
             padding: 10px;
             border-radius: 20px;
             box-shadow: 0px 0px 15px rgb(68, 0, 255);
+        }
+
+        @keyframes animacion1 {
+            0%{
+                opacity: 0;
+            }100%{opacity: 1;}
+        }
+        @keyframes animacion2 {
+            0%{
+                transform: translateY(-50px);
+            }100%{
+                transform: translateY(0px);
+            }
         }
         
         
